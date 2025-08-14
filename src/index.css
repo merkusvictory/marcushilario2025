@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Input";
-  src: url('./assets/InputMono-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/InputMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "InputBold";
-  src: url('./assets/InputMono-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/InputMono-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "Unica";
-  src: url('./assets/NeueHaasUnicaPro-Regular.ttf') format('truetype');
+  src: url('./assets/fonts/NeueHaasUnicaPro-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: "UnicaBold";
-  src: url('./assets/NeueHaasUnicaPro-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/NeueHaasUnicaPro-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: "Plex";
-  src: url('./assets/IBMPlexSans-Medium.ttf') format('truetype');
+  src: url('./assets/fonts/IBMPlexSans-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: "PlexBold";
-  src: url('./assets/IBMPlexSans-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/IBMPlexSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

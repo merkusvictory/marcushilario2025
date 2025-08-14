@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react"
+import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
 
     return (
         <div className="navbar">
-            <h1 className="navbar-title">MARCUS HILARIO</h1>
+            <NavLink to="/">
+                <h1 className="navbar-title">MARCUS HILARIO</h1>
+            </NavLink>
             <ul className="navbar-page-links">
                 <li>ABOUT</li>
                 <li>RESUME</li>
@@ -15,26 +18,53 @@ const Navbar = () => {
                 <div>
                     <h2 className="navbar-subtitle">SOFTWARE</h2>
                     <ul className="navbar-project-links">
-                        <li>Blobtopia</li>
-                        <li>Online Bookstore IMS</li>
-                        <li>Awkward Cow</li>
-                        <li>LIBRA-RY</li>
+                        <li>
+                            <NavLink to="/blobtopia">Blobtopia</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/bookstore">Online Bookstore IMS</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/awkwardcow">Awkward Cow</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/library">LIBRA-RY</NavLink>
+                        </li>
                     </ul>
                 </div>
+
                 <div>
                     <h2 className="navbar-subtitle">HARDWARE</h2>
                     <ul className="navbar-project-links">
-                        <li>Heart LED Project</li>
-                        <li>SteamPunch</li>
-                        <li>VEX Robotics</li>
+                        <li>
+                            <NavLink to="/heartledr">Heart LEDR</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/steampunch">SteamPunch</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to="/vex">VEX Robotics</NavLink>
+                        </li>
                     </ul>
                 </div>
                 <div>
                     <h2 className="navbar-subtitle">CONTACT</h2>
                     <ul className="navbar-project-links">
-                        <li>Email</li>
-                        <li>LinkedIn</li>
-                        <li>Github</li>
+                        <li>
+                            <a href="mailto:mvhilario23@gmail.com" target="_blank" rel="noopener noreferrer">
+                                Email
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/marcus-hilario/" target="_blank" rel="noopener noreferrer">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/merkusvictory" target="_blank" rel="noopener noreferrer">
+                                Github
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
