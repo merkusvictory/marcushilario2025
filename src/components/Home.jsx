@@ -72,51 +72,51 @@ const Home = () => {
                 <ProjectCard
                     title="blobtopia"
                     description="social media for blob-posting"
-                    image="src/assets/projects/blobtopia-thumbnail.png"
+                    image={blobtopiaThumbnail}
                     color="#77dd77"
-                    link={blobtopiaThumbnail}
+                    link="/blobtopia"
                 />
                 <ProjectCard
                     title="SteamPunch"
                     description="motion-controlled platformer fighting game"
-                    image="src/assets/projects/steampunch-thumbnail.png"
+                    image={steampunchThumbnail}
                     color="#B08968"
-                    link={steampunchThumbnail}
+                    link="/steampunch"
                 />
                 <ProjectCard
                     title="LIBRA-RY"
                     description="file management for law firms"
-                    image="src/assets/projects/library-thumbnail.png"
+                    image={libraryThumbnail}
                     color="#75befeff"
-                    link={libraryThumbnail}
+                    link="/library"
                 />
                 <ProjectCard
                     title="Online Bookstore IMS"
                     description="inventory management system for books"
-                    image="src/assets/projects/bookstoreims-thumbnail.png"
+                    image={bookstoreimsThumbnail}
                     color="#c1b379ff"
-                    link={bookstoreimsThumbnail}
+                    link="/bookstore"
                 />
                 <ProjectCard
                     title="Heart LEDR"
                     description="glowing no matter the distance"
-                    image="src/assets/projects/heartledr-thumbnail.jpg"
+                    image={heartledrThumbnail}
                     color="#ff5d54ff"
-                    link={heartledrThumbnail}
+                    link="/heartledr"
                 />
                 <ProjectCard
                     title="VEX Robotics"
                     description="competition robots for world domination"
-                    image="src/assets/projects/vexrobotics-thumbnail.jpg"
+                    image={vexroboticsThumbnail}
                     color="#acaca3ff"
-                    link={vexroboticsThumbnail}
+                    link="/vex"
                 />
                 <ProjectCard
                     title="Awkward Cow"
                     description="socially ineptly taking the milk back"
-                    image="src/assets/projects/awkwardcow-thumbnail.png"
+                    image={awkwardcowThumbnail}
                     color="#ffc5d3"
-                    link={awkwardcowThumbnail}
+                    link="/awkwardcow"
                 />
             </div>
             <div className="home-divider">
