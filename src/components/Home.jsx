@@ -141,7 +141,16 @@ const Home = () => {
             </div>
             <div className="contacts">
                 {contacts.map(contact =>
-                    <a href={contact.link} target="_blank">
+                    <a
+                        href={contact.link}
+                        onClick={e => {
+                            if (contact.link.startsWith("mailto:")) {
+                                e.preventDefault(); // stop default anchor behavior
+                                window.location.href = contact.link; // trigger mail client
+                            }
+                        }}
+                        target={contact.link.startsWith("mailto:") ? "_self" : "_blank"}
+                    >
                         <div
                             key={contact.name}
                             style={{ '--hover-color': contact.color }}
