@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 
-const Header = () => {
+const Header = ({ isMobile, toggleCollapse }) => {
+
+    // LIGHT MODE HANDLING
     const [lightMode, setLightMode] = useState(() => {
         const stored = localStorage.getItem("lightMode");
         return stored === null ? true : stored === "true";
@@ -19,6 +22,13 @@ const Header = () => {
         })
     };
 
+    useEffect(() => {
+        const theme = lightMode ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+    }, [])
+
+
+    // TIME HANDLING
     const [time, setTime] = useState('');
     const [date, setDate] = useState('');
 
@@ -55,18 +65,27 @@ const Header = () => {
         return () => clearInterval(intervalId);
     }, []);
 
-    useEffect(() => {
-        const theme = lightMode ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', theme);
-    }, [])
-
     return (
         <div className="header">
-            <div>
-                <p>{time}</p>
-                <p>{date}</p>
-                <p>New York, NY</p>
-            </div>
+            {isMobile ?
+                <button className="collapse-button" onClick={toggleCollapse}>
+                    <div></div>
+                    <div></div>
+                </button>
+                :
+                <></>
+            }
+            {isMobile ?
+                <NavLink to="/">
+                    <div className="header-title">MARCUS HILARIO</div>
+                </NavLink>
+                :
+                <div>
+                    <p>{time}</p>
+                    <p>{date}</p>
+                    <p>New York, NY</p>
+                </div>
+            }
             <div>
                 <p>{lightMode ? 'light' : 'dark'}</p>
                 <button className="lightmode-button" onClick={handleLightMode}>☼</button>

@@ -18,15 +18,15 @@
 }
 
 button {
-  background: none; 
-  border: none; 
-  padding: 0; 
-  font: inherit; 
-  cursor: pointer; 
-  outline: none; 
-  text-decoration: none; 
-  -webkit-appearance: none; 
-  -moz-appearance: none; 
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -42,7 +42,10 @@ button {
   text-decoration: none;
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
   color: var(--foreground-color);
 }
@@ -64,7 +67,7 @@ a:link, a:visited, a:hover, a:active {
   font-family: "Plex";
 }
 
-.navbar-project-links > li > a {
+.navbar-project-links>li>a {
   color: var(--foreground-color);
 }
 
@@ -78,11 +81,11 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .header>div {
   font-family: "Plex";
@@ -122,12 +125,28 @@ li:hover {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-
-.project-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.project-cards {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+.project-card {
+  display: inline-block;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.project-card>h2 {
+  font-size: 16px;
+}
+
+.project-card>p {
+  font-size: 12px;
 }
 
 .technologies {
@@ -136,7 +155,7 @@ li:hover {
   gap: 20px;
 }
 
-.technologies > div {
+.technologies>div {
   height: 100px;
   width: 100%;
   border: 1px solid var(--tertiary-color);
@@ -148,11 +167,12 @@ li:hover {
   user-select: none;
 }
 
-.technologies > div:hover {
+.technologies>div:hover {
   transform: scale(1.1);
 }
 
-.technologies-img, .contacts-img {
+.technologies-img,
+.contacts-img {
   object-fit: cover;
   height: 40px;
 }
@@ -163,7 +183,7 @@ li:hover {
   gap: 20px;
 }
 
-.contacts > a > div {
+.contacts>a>div {
   height: 100px;
   width: 100%;
   border: 1px solid var(--tertiary-color);
@@ -175,8 +195,24 @@ li:hover {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.contacts > a > div:hover{
+.contacts>a>div:hover {
   transform: scale(1.05);
+}
+
+.lightmode-button {
+  font-size: 20px;
+  color: var(--foreground-color);
+  line-height: 0%;
+  user-select: none;
+}
+
+.lightmode-button:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0 10px var(--foreground-color);
+}
+
+.divider {
+  margin: 36px 0;
 }
 
 /* PC Styling */
@@ -188,12 +224,13 @@ li:hover {
     position: fixed;
     top: 0;
     padding: 0 1.8rem;
+    overflow-y: auto;
   }
 
   .navbar-title {
     font-size: 20px;
     margin-bottom: 28px;
-    margin-top: 36px;
+    margin-top: 36px
   }
 
   .navbar-title:hover {
@@ -209,10 +246,6 @@ li:hover {
   .navbar-page-links>li:hover {
     transform: translateX(10px);
     text-shadow: 0 0 10px var(--tertiary-color);
-  }
-
-  .divider {
-    margin: 36px 0;
   }
 
   .navbar-subtitle {
@@ -254,23 +287,11 @@ li:hover {
     padding-right: 3.5rem;
   }
 
-  .header>div {
+   .header>div {
     font-size: 16px;
     display: flex;
     flex-direction: row;
     gap: 16px;
-  }
-
-  .lightmode-button {
-    font-size: 20px;
-    color: var(--foreground-color);
-    line-height: 0%;
-    user-select: none;
-  }
-
-  .lightmode-button:hover {
-    transform: scale(1.5);
-    text-shadow: 0 0 10px var(--foreground-color);
   }
 
   .home-divider>p {
@@ -281,9 +302,161 @@ li:hover {
     font-size: 28px;
     margin-bottom: 24px;
   }
+}
+
+/* Tablet styling */
+@media (max-width: 1200px) {
+  .project-cards {
+    column-count: 2;
+  }
+
+  .technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+}
+
+/* Mobile Styling */
+@media (max-width: 767px) {
+
+  .main.collapsed {
+    visibility: hidden;
+  }
+
+  .collapse-button>div:first-child {
+    border-top: 2px solid var(--foreground-color);
+    border-bottom: 2px solid var(--foreground-color);
+    width: 20px;
+    height: 10px;
+  }
+
+  .collapse-button>div:last-child {
+    border-bottom: 2px solid var(--foreground-color);
+    width: 20px;
+    height: 10px;
+  }
+
+  .collapse-button:hover, .header-title:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px var(--tertiary-color);
+  }
+
+  .navbar.collapsed {
+    transform: translateX(-100vw);
+  }
+
+  .navbar {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    background: var(--background-color);
+    overflow-y: auto;
+  }
+
+  .navbar-title {
+    font-size: 36px;
+    margin-bottom: 28px;
+    margin-top: 36px;
+  }
+
+
+  .navbar-page-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-page-links>li {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .navbar-page-links>li:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px var(--tertiary-color);
+  }
+
+  .navbar-subtitle {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .navbar-project-links {
+    margin-top: 12px;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-project-links>li {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .navbar-project-links>li:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 10px var(--tertiary-color);
+    color: var(--tertiary-color);
+  }
+
+  .navbar-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-projects>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home {
+    padding-bottom: 36px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .header {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .header>div {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .home-divider>p {
+    font-size: 12px;
+  }
+
+  .home-readme>p {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
 
   .project-cards {
-    column-count: 3;
     column-gap: 16px;
   }
 
@@ -300,94 +473,17 @@ li:hover {
   .project-card>p {
     font-size: 12px;
   }
-}
 
-/* Tablet styling */ 
-@media (max-width: 1200px) {
   .project-cards {
-    column-count: 2;
+    column-count: 1;
   }
-  
+
   .technologies {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.contacts {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-}
-
-}
-
-/* Mobile Styling */
-@media (max-width: 767px) {
-  .navbar {
-    height: auto;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    padding: 0 1.8rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .navbar-title {
-    font-size: 32px;
-    margin-bottom: 28px;
-    margin-top: 36px;
-  }
-
-  .navbar-page-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-page-links>li {
-    margin-bottom: 12px;
-    font-size: 24px;
-  }
-
-  .divider {
-    margin-top: 24px;
-    margin-bottom: 36px;
-  }
-
-  .navbar-subtitle {
-    margin: 0;
-    font-size: 20px;
-  }
-
-  .navbar-project-links {
-    margin-top: 12px;
-    margin-bottom: 28px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navbar-project-links>li {
-    font-size: 16px;
-    margin-bottom: 8px;
-  }
-
-  .navbar-projects {
-    display: flex;
-    flex-direction: column;
-    gap: 0 64px;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .navbar-projects>div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .contacts {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

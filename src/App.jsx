@@ -14,11 +14,33 @@ import './App.css'
 
 function App() {
 
+  // COLLAPSE BUTTON HANDLING
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  }
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    setIsMobile(mediaQuery.matches);
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+    };
+  }, []);
+
   return (
     <>
-      <Navbar />
-      <div className="main">
-        <Header />
+      <Navbar isMobile={isMobile} toggleCollapse={toggleCollapse} isCollapsed={isCollapsed}/>
+      <div className={`main ${isCollapsed ? '' : 'collapsed'}`}>
+        <Header isMobile={isMobile} toggleCollapse={toggleCollapse}/>
         <Routes>
           <Route path="/" element={
             <Home />

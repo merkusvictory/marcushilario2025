@@ -142,6 +142,7 @@ const Home = () => {
             <div className="contacts">
                 {contacts.map(contact =>
                     <a
+                        key={contact.name}
                         href={contact.link}
                         onClick={e => {
                             if (contact.link.startsWith("mailto:")) {
@@ -152,7 +153,6 @@ const Home = () => {
                         target={contact.link.startsWith("mailto:") ? "_self" : "_blank"}
                     >
                         <div
-                            key={contact.name}
                             style={{ '--hover-color': contact.color }}
                             onMouseEnter={e => e.currentTarget.style.backgroundColor = contact.color}
                             onMouseLeave={e => e.currentTarget.style.backgroundColor = 'transparent'}
