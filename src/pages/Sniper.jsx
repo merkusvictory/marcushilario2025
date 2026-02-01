@@ -1,7 +1,11 @@
 const Sniper = () => {
     return (
         <div className="project-page sniper">
-            <h1>Sniper Bot Case Study Coming Soon!</h1>
+            <div className="project-divider">
+                <p>SNIPER BOT</p>
+                <div className="divider"></div>
+            </div>
+            <h2>title</h2>
         </div>
     )
 }

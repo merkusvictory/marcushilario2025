@@ -16,11 +16,15 @@ const Navbar = ({ isCollapsed, isMobile, toggleCollapse }) => {
                 }
             </NavLink>
             <ul className="navbar-page-links">
-                <li>ABOUT</li>
+                <li>
+                    <NavLink to="/about" onClick={toggleCollapse}>ABOUT</NavLink>
+                </li>
                 <li>
                     <NavLink to="/resume" onClick={toggleCollapse}>RESUME</NavLink>
                 </li>
-                <li>BLOG</li>
+                <li>
+                    <NavLink to="/blog" onClick={toggleCollapse}>BLOG</NavLink>
+                </li>
             </ul>
             <div className="divider" />
             <div className="navbar-projects">

@@ -13,6 +13,8 @@ import Vex from './pages/VEX'
 import Marble from './pages/Marble'
 import Sniper from './pages/Sniper'
 import Resume from './pages/Resume'
+import Blog from './pages/Blog'
+import About from './pages/About'
 import './App.css'
 
 function App() {
@@ -77,6 +79,12 @@ function App() {
           } />
           <Route path="/resume" element={
             <Resume />
+          } />
+          <Route path="/blog" element={
+            <Blog />
+          } />
+          <Route path="/about" element = {
+            <About />
           } />
         </Routes>
       </div>

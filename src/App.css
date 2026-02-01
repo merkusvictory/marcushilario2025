@@ -73,11 +73,16 @@ a:active {
 
 /* Home */
 
-.home-divider {
+.home-divider, .project-divider {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 16px;
+}
+
+.home-divider > p, .project-divider > p {
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .header {
@@ -215,6 +220,16 @@ li:hover {
   margin: 36px 0;
 }
 
+/* About */
+.project-page.about>h1 {
+  margin: 12px 0;
+}
+
+.project-page.about>p {
+  color: var(--subtitle-color);
+  margin-bottom: 12px;
+}
+
 /* Resume */
 .project-page.resume>h1 {
   margin: 12px 0;
@@ -225,10 +240,25 @@ li:hover {
   margin-bottom: 12px;
 }
 
+/* Blog */
+.project-page.blog>h1 {
+  margin: 12px 0;
+}
+
+.project-page.blog>p {
+  color: var(--subtitle-color);
+  margin-bottom: 12px;
+}
+
 /* Project Pages */
 
 .project-page>h1 {
+  font-size: 64px;
   font-family: "PlexBold";
+}
+
+.project-page>h2 {
+  font-family: "Plex";
 }
 
 .project-page>p {
@@ -314,7 +344,7 @@ li:hover {
     gap: 16px;
   }
 
-  .home-divider>p {
+  .home-divider>p, .project-divider {
     font-size: 12px;
   }
 
@@ -324,7 +354,6 @@ li:hover {
   }
 
   .project-page {
-    padding-top: 12px;
     padding-bottom: 36px;
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -482,7 +511,7 @@ li:hover {
     font-family: "PlexBold";
   }
 
-  .home-divider>p {
+  .home-divider>p, .project-divider>p {
     font-size: 12px;
   }
 
@@ -523,7 +552,6 @@ li:hover {
   }
 
   .project-page {
-    padding-top: 12px;
     padding-bottom: 36px;
     padding-left: 3rem;
     padding-right: 3rem;

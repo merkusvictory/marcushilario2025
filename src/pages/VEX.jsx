@@ -1,7 +1,11 @@
 const Vex = () => {
     return (
         <div className="project-page vex">
-            <h1>Vex Robotics Case Study Coming Soon!</h1>
+            <div className="project-divider">
+                <p>VEX ROBOTICS</p>
+                <div className="divider"></div>
+            </div>
+            <h2>title</h2>
         </div>
     )
 }

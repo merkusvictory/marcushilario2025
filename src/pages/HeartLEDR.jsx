@@ -1,7 +1,11 @@
 const HeartLEDR = () => {
     return (
         <div className="project-page heartledr">
-            <h1>Heart LEDR Case Study Coming Soon!</h1>
+            <div className="project-divider">
+                <p>HEART LEDR</p>
+                <div className="divider"></div>
+            </div>
+            <h2>title</h2>
         </div>
     )
 }
