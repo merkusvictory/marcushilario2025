@@ -56,6 +56,7 @@
   background-color: var(--background-color);
   --background-color: #F9F9F9;
   --foreground-color: #313131;
+  --subtitle-color: rgb(109, 109, 109);
   --tertiary-color: #cccccc;
 
   font-synthesis: none;
@@ -67,6 +68,7 @@
 [data-theme='dark'] {
   --background-color: #313131;
   --foreground-color: #F9F9F9;
+  --subtitle-color: rgb(168, 168, 168);
   --tertiary-color: #404040;
 }
 

@@ -12,6 +12,7 @@ import Library from './pages/Library'
 import Vex from './pages/VEX'
 import Marble from './pages/Marble'
 import Sniper from './pages/Sniper'
+import Resume from './pages/Resume'
 import './App.css'
 
 function App() {
@@ -73,6 +74,9 @@ function App() {
           } />
           <Route path="/sniper" element={
             <Sniper />
+          } />
+          <Route path="/resume" element={
+            <Resume />
           } />
         </Routes>
       </div>

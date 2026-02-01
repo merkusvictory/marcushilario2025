@@ -215,6 +215,16 @@ li:hover {
   margin: 36px 0;
 }
 
+/* Resume */
+.project-page.resume>h1 {
+  margin: 12px 0;
+}
+
+.project-page.resume>p {
+  color: var(--subtitle-color);
+  margin-bottom: 12px;
+}
+
 /* Project Pages */
 
 .project-page>h1 {

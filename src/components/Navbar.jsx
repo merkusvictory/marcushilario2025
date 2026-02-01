@@ -17,7 +17,9 @@ const Navbar = ({ isCollapsed, isMobile, toggleCollapse }) => {
             </NavLink>
             <ul className="navbar-page-links">
                 <li>ABOUT</li>
-                <li>RESUME</li>
+                <li>
+                    <NavLink to="/resume" onClick={toggleCollapse}>RESUME</NavLink>
+                </li>
                 <li>BLOG</li>
             </ul>
             <div className="divider" />
