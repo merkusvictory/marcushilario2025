@@ -10,6 +10,8 @@ import Bookstore from './pages/Bookstore'
 import HeartLEDR from './pages/HeartLEDR'
 import Library from './pages/Library'
 import Vex from './pages/VEX'
+import Marble from './pages/Marble'
+import Sniper from './pages/Sniper'
 import './App.css'
 
 function App() {
@@ -65,6 +67,12 @@ function App() {
           } />
           <Route path="/vex" element={
             <Vex />
+          } />
+          <Route path="/marble" element={
+            <Marble />
+          } />
+          <Route path="/sniper" element={
+            <Sniper />
           } />
         </Routes>
       </div>

@@ -215,6 +215,16 @@ li:hover {
   margin: 36px 0;
 }
 
+/* Project Pages */
+
+.project-page>h1 {
+  font-family: "PlexBold";
+}
+
+.project-page>p {
+  font-family: "Plex";
+}
+
 /* PC Styling */
 @media screen and (min-width: 768px) {
 
@@ -302,6 +312,13 @@ li:hover {
     font-size: 28px;
     margin-bottom: 24px;
   }
+
+  .project-page {
+    padding-top: 12px;
+    padding-bottom: 36px;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
 }
 
 /* Tablet styling */
@@ -329,6 +346,10 @@ li:hover {
 
   .main.collapsed {
     visibility: hidden;
+  }
+
+  .collapse-button {
+    user-select: none;
   }
 
   .collapse-button>div:first-child {
@@ -447,6 +468,10 @@ li:hover {
     gap: 10px;
   }
 
+  .header-title {
+    font-family: "PlexBold";
+  }
+
   .home-divider>p {
     font-size: 12px;
   }
@@ -485,5 +510,12 @@ li:hover {
   .contacts {
     grid-template-columns: 1fr;
     gap: 20px;
+  }
+
+  .project-page {
+    padding-top: 12px;
+    padding-bottom: 36px;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }

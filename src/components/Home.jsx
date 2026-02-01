@@ -26,6 +26,8 @@ import bookstoreimsThumbnail from '../assets/projects/bookstoreims-thumbnail.png
 import heartledrThumbnail from '../assets/projects/heartledr-thumbnail.jpg';
 import vexroboticsThumbnail from '../assets/projects/vexrobotics-thumbnail.jpg';
 import awkwardcowThumbnail from '../assets/projects/awkwardcow-thumbnail.png';
+import marblestaircaseThumbnail from '../assets/projects/marblestaircase-thumbnail.jpg';
+import sniperbotThumbnail from '../assets/projects/sniperbot-thumbnail.png';
 
 const Home = () => {
 
@@ -59,7 +61,7 @@ const Home = () => {
             </div>
             <div className="home-readme">
                 <p>
-                    I'm a developer finding ways to connect people through
+                    I'm a software developer finding ways to connect people through
                     tech. I've previously designed file management systems
                     at Libra Law and managed 50+ volunteers for a university robotics club.
                 </p>
@@ -73,49 +75,63 @@ const Home = () => {
                     title="blobtopia"
                     description="social media for blob-posting"
                     image={blobtopiaThumbnail}
-                    color="#77dd77"
+                    color="#4a7c59"
                     link="/blobtopia"
                 />
                 <ProjectCard
                     title="SteamPunch"
                     description="motion-controlled platformer fighting game"
                     image={steampunchThumbnail}
-                    color="#B08968"
+                    color="#8b7355"
                     link="/steampunch"
                 />
                 <ProjectCard
                     title="LIBRA-RY"
                     description="file management for law firms"
                     image={libraryThumbnail}
-                    color="#75befeff"
+                    color="#4a6fa5"
                     link="/library"
+                />
+                <ProjectCard
+                    title="Marble Staircase"
+                    description="one must imagine marble-phus happy"
+                    image={marblestaircaseThumbnail}
+                    color="#2c3e50"
+                    link="/marble"
+                />
+                <ProjectCard
+                    title="Sniper Discord Bot"
+                    description="point tracker for irl sniping"
+                    image={sniperbotThumbnail}
+                    color="#b8a74a"
+                    link="/sniper"
                 />
                 <ProjectCard
                     title="Online Bookstore IMS"
                     description="inventory management system for books"
                     image={bookstoreimsThumbnail}
-                    color="#c1b379ff"
+                    color="#8b8b5e"
                     link="/bookstore"
                 />
                 <ProjectCard
                     title="Heart LEDR"
                     description="glowing no matter the distance"
                     image={heartledrThumbnail}
-                    color="#ff5d54ff"
+                    color="#a85751"
                     link="/heartledr"
                 />
                 <ProjectCard
                     title="VEX Robotics"
                     description="competition robots for world domination"
                     image={vexroboticsThumbnail}
-                    color="#acaca3ff"
+                    color="#5c5c5c"
                     link="/vex"
                 />
                 <ProjectCard
                     title="Awkward Cow"
                     description="socially ineptly taking the milk back"
                     image={awkwardcowThumbnail}
-                    color="#ffc5d3"
+                    color="#9e7b9b"
                     link="/awkwardcow"
                 />
             </div>

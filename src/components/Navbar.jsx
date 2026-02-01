@@ -37,12 +37,18 @@ const Navbar = ({ isCollapsed, isMobile, toggleCollapse }) => {
                         <li>
                             <NavLink to="/library" onClick={toggleCollapse}>LIBRA-RY</NavLink>
                         </li>
+                        <li>
+                            <NavLink to="/sniper" onClick={toggleCollapse}>Sniper Bot</NavLink>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
                     <h2 className="navbar-subtitle">HARDWARE</h2>
                     <ul className="navbar-project-links">
+                        <li>
+                            <NavLink to="/marble" onClick={toggleCollapse}>Marble Staircase</NavLink>
+                        </li>
                         <li>
                             <NavLink to="/heartledr" onClick={toggleCollapse}>Heart LEDR</NavLink>
                         </li>
