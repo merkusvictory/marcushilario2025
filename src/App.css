@@ -259,10 +259,29 @@ li:hover {
 
 .project-page>h2 {
   font-family: "Plex";
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.head {
+  margin-top: 0px;
 }
 
 .project-page>p {
   font-family: "Plex";
+  margin-bottom: 16px;
+}
+
+.project-page>ul {
+  font-family: "Plex";
+  margin-left: 32px;
+  margin-bottom: 16px;
+}
+
+.project-page>img {
+  display: block;
+  margin: auto;
+  width: 75%;
 }
 
 /* PC Styling */
