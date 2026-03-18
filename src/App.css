@@ -227,7 +227,14 @@ li:hover {
 
 .project-page.about>p {
   color: var(--subtitle-color);
-  margin-bottom: 12px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.project-page.about>img {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
 }
 
 /* Resume */
