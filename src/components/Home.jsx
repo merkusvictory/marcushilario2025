@@ -61,9 +61,7 @@ const Home = () => {
             </div>
             <div className="home-readme">
                 <p>
-                    I'm a software developer finding ways to connect people through
-                    tech. I've previously designed file management systems
-                    at Libra Law and managed 50+ volunteers for a university robotics club.
+                    I'm a software developer interested in robotics, web development, and graphic design! I've designed file management systems at a previous internship and managed university students in volunteering and teaching assistant efforts.
                 </p>
             </div>
             <div className="home-divider">
