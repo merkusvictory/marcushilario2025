@@ -61,7 +61,7 @@ const Home = () => {
             </div>
             <div className="home-readme">
                 <p>
-                    I'm a software developer interested in robotics, web development, and graphic design! I've designed file management systems at a previous internship and managed university students in volunteering and teaching assistant efforts.
+                    I'm a software developer interested in robotics, web development, and graphic design! I've designed file management systems at a previous internship and managed university students in volunteering and teaching assistant efforts. This summer, I'll be in Atlanta as a software engineer intern at AT&T!
                 </p>
             </div>
             <div className="home-divider">
